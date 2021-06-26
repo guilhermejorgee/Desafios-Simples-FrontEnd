@@ -74,6 +74,40 @@
         a{
             text-decoration: none;
         }
+
+        #div-superior{
+            height: 130px;
+        }
+
+        @media screen and (min-width: 768px){
+        #div-superior{
+            height: 320px;
+        }
+
+        }
+
+        @media screen and (min-width: 1024px){
+        #div-superior{
+            height: 500px;
+        }
+
+        }
+
+        @media screen and (min-width: 375px) and (max-height: 820px){
+        #div-superior{
+            height: 200px;
+        }
+
+        }
+
+        @media screen and (min-width: 375px) and (max-height: 700px){
+        #div-superior{
+            height: 150px;
+        }
+
+        }
+
+    
         
 
     </style>
@@ -98,7 +132,7 @@
 
                         <div class="container">
 
-                            <div class="row d-flex text-end" style="height: 150px;">
+                            <div class="row d-flex text-end" id="div-superior">
 
                                 <div class="col-md-6">
 
