@@ -1,354 +1,160 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <script src="https://kit.fontawesome.com/860330e368.js" crossorigin="anonymous"></script>
+    <style>
 
-  <title>Hello, world!</title>
+        @import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+        #bg-f{
+            background: url(teste4.svg) no-repeat;
+
+            background-position: center;
+
+            height: 100vh;
+            width: 100vw;
+        } 
+
+        #bg-m{
+            width: 858px;
+            height: 80vh;
+            background: rgba(132, 90, 191, 0.9);    
+        }
+
+        .texto{
+
+        font-family: 'Eczar', serif;
+        font-style: normal;
+        font-size: 26px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #845ABF;
+       /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+        }
+
+        .bg-in{
+            background-color: rgba(170,167,242, 0.8);
+        }
+        .bg-in::placeholder{
+            color: #E3DCF2;
+        }
+
+        .bg-in:focus{
+            background-color: #9794F2;
+            box-shadow: 0px 0px 3px #693C96;
+        }
+
+        .bg-btn{
+            background: #E7F7FA;
+            border: 1px solid #bcdee4;
+            color:#2D4045;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 12pt;
+        }
+
+        .bg-btn-ca{
+            background: #95B385;
+            border: 1px solid #95B385;
+        }
+
+        .bg-btn:hover{
+            background: #b5cdd1;
+            border: 1px solid #99b3b8;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        
+
+    </style>
+
 </head>
-
 <body>
 
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div id="bg-f">
+
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/svg/icon.svg" alt="" width="30" height="24">
-        Agência Coders
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicos.html">Serviços</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Equipe
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="equipemkt.html">Marketing Digital</a></li>
-              <li><a class="dropdown-item" href="equipedsweb.html">Desenvolvimento Web</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Fundadores</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link bt-c" data-bs-toggle="modal" data-bs-target="#exampleModal">Contato</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <!--/Navbar-->
 
+        <div class="row" style="height: 70px;">
 
-  <!-- Modal Contato -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
 
-          <!--Formulário de contato-->
-          <div class="row">
-            <div class="col-md-12">
+            <div class="row">
 
-              <form>
-                <div class="mb-3 bs-b">
+                <div class="col-md-12 d-flex justify-content-center">
 
-                  <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                  <input id="nome" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome"
-                    onkeyup="validaName()">
 
-                  <span class="d-flex justify-content-end" id="avisoNome"></span>
+                  <!--  <span id="bg-m"></span>-->
+
+                        <div class="container">
+
+                            <div class="row d-flex text-end" style="height: 150px;">
+
+                                <div class="col-md-6">
+
+                                    
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    
+
+                                </div>
+
+                            
+
+                            </div>
+
+                            <div class="row d-flex justify-content-center align-items-center">
+
+                                <div class="col-md-5">
+
+                    
+                                    <div class="form-group text-center mb-3 texto">
+                                        <label for="usuario">Usuário</label>
+                                        <input class="form-control mt-2 bg-in" type="text" name="usuario" id="usuario" placeholder="Seu usuário">
+                                    </div>
+                
+                                    <div class="form-group text-center texto">
+                                        <label for="senha">Senha</label>
+                                        <input class="form-control mt-2 bg-in " type="password" name="senha" id="senha" placeholder="Sua senha">
+                                    </div>
+                
+                                    <div class="d-flex justify-content-around mt-3">
+                                        <button type="submit" class="btn btn-sm bg-btn bg-btn-ca">Cadastra-se</button>
+                                        <button type="submit" class="btn btn-sm bg-btn">Entrar</button>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
 
                 </div>
 
-                <div class="mb-3 bs-b">
-
-                  <label for="exampleFormControlInput1" class="form-label">Email</label>
-                  <input id="email" type="email" class="form-control" id="exampleFormControlInput1"
-                    placeholder="name@example.com" onkeyup="validaEmail()">
-
-                  <span class="d-flex justify-content-end" id="avisoEmail"></span>
-
-                </div>
-
-                <div class="mb-3 asfo">
-                  <label for="exampleFormControlTextarea1" class="form-label">Assunto</label>
-                  <textarea id="assunto" class="form-control" id="exampleFormControlTextarea1" rows="3"
-                    onkeyup="validaAssunto()"></textarea>
-
-                  <span id="avisoAssunto"></span>
-
-                </div>
-
-                <div class="d-flex justify-content-end">
-                  <button type="submit" class="btn btn-primary" onclick="validaGeral()">Submit</button>
-                </div>
-              </form>
             </div>
 
-          </div>
-
-          <!--/Formulário de contato-->
-
         </div>
-      </div>
-    </div>
-  </div>
-  <!--/Modal Contato -->
-
-
-  <!--Carousel-->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-        aria-label="Slide 4"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/03/O-que-e-CSS-Aprenda-sobre-CSS-com-este-Guia-Basico-1280x720.png"
-          class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.ytimg.com/vi/EiZbhsVY2Dk/maxresdefault.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.ytimg.com/vi/bcyPawjQUSs/maxresdefault.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/11/Como-linkar-css-no-html-1280x720.png"
-          class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!--Carousel-->
-
-  <!--Jumbotron-->
-  <div class="bg-light p-5 rounded-lg">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-      featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </div>
-  <!--/Jumbotron-->
-
-  <!--Cards-->
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-3 g-4 m-2">
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
+    
     </div>
 
-    <!--/Cards-->
-
-    <!--Texto/Video-->
-    <div class="row m-5">
-
-      <div class="col-md-6 my-5">
-
-        <h3>Texto teste</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quod voluptatem omnis saepe dolor nesciunt
-          eligendi aspernatur repudiandae aut laudantium minima inventore sit, rerum, doloribus quo amet unde, iste
-          voluptatibus.</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quod voluptatem omnis saepe dolor nesciunt
-          eligendi aspernatur repudiandae aut laudantium minima inventore sit, rerum, doloribus quo amet unde, iste
-          voluptatibus.</p>
-      </div>
-
-      <div class="col-md-6">
-
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uNFHVC9Q8Y0" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-
-      </div>
-
-    </div>
-    <!--/Texto/Video-->
-
-    <!--Formulário de contato-->
-
-    <div class="row">
-      <div class="col-md-12">
-        <h4 class="text-center">Entre em contato conosco</h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-
-        <form>
-          <div class="mb-3 bs-b">
-
-            <label for="exampleFormControlInput1" class="form-label">Nome</label>
-            <input id="nome" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome"
-              onkeyup="validaName()">
-
-            <span class="d-flex justify-content-end" id="avisoNome"></span>
-
-          </div>
-
-          <div class="mb-3 bs-b">
-
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input id="email" type="email" class="form-control" id="exampleFormControlInput1"
-              placeholder="name@example.com" onkeyup="validaEmail()">
-
-            <span class="d-flex justify-content-end" id="avisoEmail"></span>
-
-          </div>
-
-          <div class="mb-3 asfo">
-            <label for="exampleFormControlTextarea1" class="form-label">Assunto</label>
-            <textarea id="assunto" class="form-control" id="exampleFormControlTextarea1" rows="3"
-              onkeyup="validaAssunto()"></textarea>
-
-            <span id="avisoAssunto"></span>
-
-          </div>
-
-          <div class="d-flex justify-content-end">
-            <button type="submit" class="btn btn-primary" onclick="validaGeral()">Submit</button>
-          </div>
-        </form>
-      </div>
-
-      <div class="col-md-6" id="mapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53672.66453175604!2d168.64374209537056!3d-45.00823747216981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d51d4b9daecc23%3A0xc15af3e12df2972d!2sBen%20Lomond!5e0!3m2!1spt-BR!2sbr!4v1623860554343!5m2!1spt-BR!2sbr"
-          class="w-100" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-
-    </div>
-
-    <!--/Formulário de contato-->
+</div>
 
 
-    <hr>
-
-    <!--Rodapé-->
-    <footer>
-      <div class="row mb-3">
-        <div class="col-md-12 d-flex justify-content-center">
-
-          <a href="https://www.linkedin.com/in/guilhermejorgee/" class="p-5" target="_blank"><i
-              class="fab fa-linkedin tm-social"></i></a>
-          <a href="https://github.com/guilhermejorgee/" class="p-5" target="_blank"><i
-              class="fab fa-github-square tm-social"></i></a>
-
-
-        </div>
-      </div>
-
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-12">
-          <div class="text-center">
-            <p>&copy; Todos os direitos reservados a Guilherme Jorge </p>
-          </div>
-        </div>
-      </div>
-
-    </footer>
-    <!--/Rodapé-->
-  </div>
-
-
-
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
-
-  <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 </body>
-
 </html>
